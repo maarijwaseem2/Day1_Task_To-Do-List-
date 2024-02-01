@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+.form {
+display: flex;
+align-items: center;
+height: 100vh;
+background-color: #2196F3;
+}
+.form .login {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+border-left: 5px solid #2196F3;
+height: 100%;
+}
+.password-container,
+.container {
+position: relative;
+}
+
+.password-container p,
+.container p {
+position: absolute;
+top: -25px;
+left: 10px;
+background-color: white;
+padding: 1px 5px;
+color: black;
+}
+
+input {
+width: 300px;
+padding: 13px;
+margin-bottom: 10px;
+border-radius: 5px;
+border: 1px solid #2196F3;
+}
+
+h1 {
+font-size: 50px;
+}
+
+.heading {
+font-weight:900;
+font-size:30px;
+color: white;
+}
+
+button {
+font-size:17px;
+width: 300px;
+padding: 14px 16px;
+background-color: #17507e;
+border: none;
+outline: none;
+color: white;
+border-radius: 50px;
+transition: .2s ease;
+}
+.close a{
+text-decoration: none;
+font-size:17px;
+width: 200px;
+padding: 12px 16px;
+background-color: white;
+border: none;
+outline: none;
+color: black;
+border-radius: 50px;
+transition: .2s ease;
+}
+
+#togglePassword {
+position: absolute;
+right: 10px;
+top: 40%;
+transform: translateY(-50%);
+cursor: pointer;
+}

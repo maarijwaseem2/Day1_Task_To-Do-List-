@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2196f3;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.task-form,
+.task-list,
+.timer-container {
+    width: 100%;
+}
+.btn {
+    font-size:15px;
+    width: 100px;
+    padding: 6px 8px;
+    background-color: #2196f3;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: .2s ease;
+  }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #9acdf6;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .app-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .task-form,
+    .task-list,
+    .timer-container {
+        width: 30%;
+    }
+}
